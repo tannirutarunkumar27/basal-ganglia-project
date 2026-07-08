@@ -1,0 +1,60 @@
+{
+  "explanations": [
+    {
+      "t_ms": 0.0,
+      "step": 1,
+      "chosen_action": 2,
+      "action_name": "press_button",
+      "confidence": 0.7899999999999999,
+      "uncertainty": 0.3,
+      "gate_margin": 0.25,
+      "rationale": "Action 2 has highest posterior belief Va=1.200 with margin 1.300 over next-best alternative. | Direct pathway Go signal for action 2 dominates indirect No-Go (ratio=4.62). Thalamic disinhibition pathway is active. | Dopamine dominant \u2014 exploitation mode active. System favours high-value known actions.",
+      "pathway_rationale": "Direct pathway Go signal for action 2 dominates indirect No-Go (ratio=4.62). Thalamic disinhibition pathway is active.",
+      "rejected_alternatives": [
+        "reach_right [SUBOPTIMAL] (score=0.112)",
+        "reach_left [SUBOPTIMAL] (score=0.037)",
+        "wait [SUBOPTIMAL] (score=0.000)"
+      ],
+      "counterfactual_comparison": "  If wait were chosen: reward gap = +0.950, confidence = 1.00. wait was rejected: wait had lower risk-adjusted utility Q_risk=-0.150 vs Q_risk=0.800 for press_button (gap=+0.950, rho=0.50); Bayesian belief lower for wait: Va=-0.400 vs Va=1.200; GPi gate margin for wait=-0.4500 vs press_button=0.2500 \u2014 direct pathway insufficient; DA-dominant exploitation mode (DA=0.65) favours known high-value action.\n  If reach_right were chosen: reward gap = +0.550, confidence = 0.83. reach_right was rejected: reach_right had lower risk-adjusted utility Q_risk=0.250 vs Q_risk=0.800 for press_button (gap=+0.550, rho=0.50); Bayesian belief lower for reach_right: Va=-0.100 vs Va=1.200; GPi gate margin for reach_right=-0.2000 vs press_button=0.2500 \u2014 direct pathway insufficient; DA-dominant exploitation mode (DA=0.65) favours known high-value action.\n  If reach_left were chosen: reward gap = +0.500, confidence = 0.88. reach_left was rejected: reach_left had lower risk-adjusted utility Q_risk=0.300 vs Q_risk=0.800 for press_button (gap=+0.500, rho=0.50); Bayesian belief lower for reach_left: Va=-0.300 vs Va=1.200; GPi gate margin for reach_left=-0.3000 vs press_button=0.2500 \u2014 direct pathway insufficient; DA-dominant exploitation mode (DA=0.65) favours known high-value action.",
+      "neuromodulatory_summary": "Neuromodulator state: DA=0.650, 5HT=0.350, NE=0.300. Mt=0.520. Dominant=DA (exploitation mode). alpha_t=0.06300, rho=0.500.",
+      "attention_summary": "Decision primarily driven by: belief_Va (0.14), risk_Q (0.13), pathway_Go (0.12).",
+      "dominant_nm": "DA",
+      "alpha_t": 0.063,
+      "Mt": 0.52,
+      "rho": 0.5,
+      "conflict_score": 0.1,
+      "n_rules_fired": 5,
+      "attention_weights": [
+        0.136549952389281,
+        0.12523246116277334,
+        0.12359939605928887,
+        0.12243793683033088,
+        0.12334928368039602,
+        0.1232765830347035,
+        0.12332440864121308,
+        0.12222997820187666
+      ],
+      "counterfactuals": [
+        {
+          "rejected": 0,
+          "delta_Q": 0.5,
+          "conf": 0.8799999999999999,
+          "text": "reach_left was rejected: reach_left had lower risk-adjusted utility Q_risk=0.300 vs Q_risk=0.800 for press_button (gap=+0.500, rho=0.50); Bayesian belief lower for reach_left: Va=-0.300 vs Va=1.200; GPi gate margin for reach_left=-0.3000 vs press_button=0.2500 \u2014 direct pathway insufficient; DA-dominant exploitation mode (DA=0.65) favours known high-value action."
+        },
+        {
+          "rejected": 1,
+          "delta_Q": 0.55,
+          "conf": 0.835,
+          "text": "reach_right was rejected: reach_right had lower risk-adjusted utility Q_risk=0.250 vs Q_risk=0.800 for press_button (gap=+0.550, rho=0.50); Bayesian belief lower for reach_right: Va=-0.100 vs Va=1.200; GPi gate margin for reach_right=-0.2000 vs press_button=0.2500 \u2014 direct pathway insufficient; DA-dominant exploitation mode (DA=0.65) favours known high-value action."
+        },
+        {
+          "rejected": 3,
+          "delta_Q": 0.9500000000000001,
+          "conf": 1.0,
+          "text": "wait was rejected: wait had lower risk-adjusted utility Q_risk=-0.150 vs Q_risk=0.800 for press_button (gap=+0.950, rho=0.50); Bayesian belief lower for wait: Va=-0.400 vs Va=1.200; GPi gate margin for wait=-0.4500 vs press_button=0.2500 \u2014 direct pathway insufficient; DA-dominant exploitation mode (DA=0.65) favours known high-value action."
+        }
+      ]
+    }
+  ],
+  "n_total": 1
+}

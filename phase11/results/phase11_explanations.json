@@ -1,0 +1,280 @@
+{
+  "explanations": [
+    {
+      "t_ms": 0.0,
+      "step": 1,
+      "chosen_action": 2,
+      "action_name": "press_button",
+      "confidence": 0.35,
+      "uncertainty": 0.5,
+      "gate_margin": 0.0,
+      "rationale": "STN burst detected \u2014 global action suppression active. Conflict between alternatives prevents release. | Serotonin dominant \u2014 risk-averse mode. System avoids high-variance outcomes.",
+      "pathway_rationale": "No dominant pathway rule. Gate margin = 0.0000. Confidence = 0.500.",
+      "rejected_alternatives": [
+        "wait [BLOCKED] (score=-999.000)",
+        "reach_right [BLOCKED] (score=-999.000)",
+        "reach_left [BLOCKED] (score=-999.000)"
+      ],
+      "counterfactual_comparison": "  If reach_left were chosen: reward gap = +1.000, confidence = 0.50. reach_left was rejected: reach_left had lower risk-adjusted utility Q_risk=0.000 vs Q_risk=1.000 for press_button (gap=+1.000, rho=0.53); STN burst active (conflict=0.000) \u2014 reach_left would also be suppressed.\n  If reach_right were chosen: reward gap = +1.000, confidence = 0.50. reach_right was rejected: reach_right had lower risk-adjusted utility Q_risk=0.000 vs Q_risk=1.000 for press_button (gap=+1.000, rho=0.53); STN burst active (conflict=0.000) \u2014 reach_right would also be suppressed.\n  If wait were chosen: reward gap = +1.000, confidence = 0.50. wait was rejected: wait had lower risk-adjusted utility Q_risk=0.000 vs Q_risk=1.000 for press_button (gap=+1.000, rho=0.53); STN burst active (conflict=0.000) \u2014 wait would also be suppressed.",
+      "neuromodulatory_summary": "Neuromodulator state: DA=0.184, 5HT=0.500, NE=0.400. Mt=0.366. Dominant=5HT (risk-avoidance mode). alpha_t=0.06450, rho=0.525.",
+      "attention_summary": "Decision primarily driven by: memory_fast (0.13), reward_history (0.13), pathway_Go (0.13).",
+      "dominant_nm": "5HT",
+      "alpha_t": 0.0645,
+      "Mt": 0.3663869252806806,
+      "rho": 0.5250000024051782,
+      "conflict_score": 1.9241425502913856e-07,
+      "n_rules_fired": 2,
+      "attention_weights": [
+        0.13212027577498098,
+        0.09783124850646029,
+        0.13212027969251283,
+        0.13212027969251283,
+        0.12061701468771545,
+        0.13212027969251283,
+        0.13212027969251283,
+        0.12095034226065972
+      ],
+      "counterfactuals": [
+        {
+          "rejected": 0,
+          "delta_Q": 1.0,
+          "conf": 0.5000000870130851,
+          "text": "reach_left was rejected: reach_left had lower risk-adjusted utility Q_risk=0.000 vs Q_risk=1.000 for press_button (gap=+1.000, rho=0.53); STN burst active (conflict=0.000) \u2014 reach_left would also be suppressed."
+        },
+        {
+          "rejected": 1,
+          "delta_Q": 1.0,
+          "conf": 0.5000000563202466,
+          "text": "reach_right was rejected: reach_right had lower risk-adjusted utility Q_risk=0.000 vs Q_risk=1.000 for press_button (gap=+1.000, rho=0.53); STN burst active (conflict=0.000) \u2014 reach_right would also be suppressed."
+        },
+        {
+          "rejected": 3,
+          "delta_Q": 1.0,
+          "conf": 0.5000001052176068,
+          "text": "wait was rejected: wait had lower risk-adjusted utility Q_risk=0.000 vs Q_risk=1.000 for press_button (gap=+1.000, rho=0.53); STN burst active (conflict=0.000) \u2014 wait would also be suppressed."
+        }
+      ]
+    },
+    {
+      "t_ms": 100.0,
+      "step": 2,
+      "chosen_action": 2,
+      "action_name": "press_button",
+      "confidence": 0.3008722381196986,
+      "uncertainty": 0.9987539455432877,
+      "gate_margin": 0.0,
+      "rationale": "Action 2 has highest posterior belief Va=-2.455 with margin 6.166 over next-best alternative. | Uncertainty Ut=0.999 exceeds threshold 0.6. System in exploratory mode \u2014 confidence gate raised to require stronger evidence. | Norepinephrine dominant \u2014 arousal/exploration mode. System is sensitive to novel or surprising options.",
+      "pathway_rationale": "No dominant pathway rule. Gate margin = 0.0000. Confidence = 0.001.",
+      "rejected_alternatives": [
+        "reach_left [SUBOPTIMAL] (score=0.409)",
+        "wait [SUBOPTIMAL] (score=0.067)",
+        "reach_right [SUBOPTIMAL] (score=0.000)"
+      ],
+      "counterfactual_comparison": "  If reach_left were chosen: reward gap = +1.100, confidence = 1.00. reach_left was rejected: reach_left had lower risk-adjusted utility Q_risk=-0.100 vs Q_risk=1.000 for press_button (gap=+1.100, rho=1.25); Bayesian belief lower for reach_left: Va=-8.621 vs Va=-2.455; 5-HT risk-aversion (5HT=0.61) penalises high-variance alternatives; Taking reach_left would increase uncertainty by ~0.450.\n  If reach_right were chosen: reward gap = +1.100, confidence = 1.00. reach_right was rejected: reach_right had lower risk-adjusted utility Q_risk=-0.100 vs Q_risk=1.000 for press_button (gap=+1.100, rho=1.25); Bayesian belief lower for reach_right: Va=-21.788 vs Va=-2.455; 5-HT risk-aversion (5HT=0.61) penalises high-variance alternatives; Taking reach_right would increase uncertainty by ~0.866.\n  If wait were chosen: reward gap = +1.100, confidence = 1.00. wait was rejected: wait had lower risk-adjusted utility Q_risk=-0.100 vs Q_risk=1.000 for press_button (gap=+1.100, rho=1.25); Bayesian belief lower for wait: Va=-19.632 vs Va=-2.455; 5-HT risk-aversion (5HT=0.61) penalises high-variance alternatives; Taking wait would increase uncertainty by ~0.651.",
+      "neuromodulatory_summary": "Neuromodulator state: DA=0.320, 5HT=0.611, NE=0.652. Mt=0.556. Dominant=NE (exploration mode). alpha_t=0.23037, rho=1.248.",
+      "attention_summary": "Decision primarily driven by: pathway_NoGo (0.14), pathway_Go (0.14), memory_fast (0.14).",
+      "dominant_nm": "NE",
+      "alpha_t": 0.23036569903274845,
+      "Mt": 0.555758887406554,
+      "rho": 1.2482625810442072,
+      "conflict_score": 11.501484760517025,
+      "n_rules_fired": 4,
+      "attention_weights": [
+        0.062456615663310684,
+        0.11505669845094633,
+        0.14159705207020487,
+        0.14159705207020543,
+        0.12717477287768303,
+        0.1370553981050719,
+        0.14134075842358607,
+        0.1337216523388501
+      ],
+      "counterfactuals": [
+        {
+          "rejected": 0,
+          "delta_Q": 1.1,
+          "conf": 1.0,
+          "text": "reach_left was rejected: reach_left had lower risk-adjusted utility Q_risk=-0.100 vs Q_risk=1.000 for press_button (gap=+1.100, rho=1.25); Bayesian belief lower for reach_left: Va=-8.621 vs Va=-2.455; 5-HT risk-aversion (5HT=0.61) penalises high-variance alternatives; Taking reach_left would increase uncertainty by ~0.450."
+        },
+        {
+          "rejected": 1,
+          "delta_Q": 1.1,
+          "conf": 1.0,
+          "text": "reach_right was rejected: reach_right had lower risk-adjusted utility Q_risk=-0.100 vs Q_risk=1.000 for press_button (gap=+1.100, rho=1.25); Bayesian belief lower for reach_right: Va=-21.788 vs Va=-2.455; 5-HT risk-aversion (5HT=0.61) penalises high-variance alternatives; Taking reach_right would increase uncertainty by ~0.866."
+        },
+        {
+          "rejected": 3,
+          "delta_Q": 1.1,
+          "conf": 1.0,
+          "text": "wait was rejected: wait had lower risk-adjusted utility Q_risk=-0.100 vs Q_risk=1.000 for press_button (gap=+1.100, rho=1.25); Bayesian belief lower for wait: Va=-19.632 vs Va=-2.455; 5-HT risk-aversion (5HT=0.61) penalises high-variance alternatives; Taking wait would increase uncertainty by ~0.651."
+        }
+      ]
+    },
+    {
+      "t_ms": 200.0,
+      "step": 3,
+      "chosen_action": 3,
+      "action_name": "wait",
+      "confidence": 0.3003851164062161,
+      "uncertainty": 0.9994498337054055,
+      "gate_margin": 0.0,
+      "rationale": "Direct pathway Go signal for action 3 dominates indirect No-Go (ratio=420494.37). Thalamic disinhibition pathway is active. | Uncertainty Ut=0.999 exceeds threshold 0.6. System in exploratory mode \u2014 confidence gate raised to require stronger evidence. | Norepinephrine dominant \u2014 arousal/exploration mode. System is sensitive to novel or surprising options.",
+      "pathway_rationale": "Direct pathway Go signal for action 3 dominates indirect No-Go (ratio=420494.37). Thalamic disinhibition pathway is active.",
+      "rejected_alternatives": [
+        "reach_left [SUBOPTIMAL] (score=0.600)",
+        "press_button [SUBOPTIMAL] (score=0.285)",
+        "reach_right [SUBOPTIMAL] (score=0.000)"
+      ],
+      "counterfactual_comparison": "  If press_button were chosen: reward gap = -1.100, confidence = 1.00. press_button was rejected: press_button had higher Q_risk=1.000 but was blocked by other constraints; Bayesian belief lower for press_button: Va=-14.893 vs Va=-8.472; 5-HT risk-aversion (5HT=0.68) penalises high-variance alternatives; Taking press_button would increase uncertainty by ~0.178.\n  If reach_left were chosen: reward gap = +0.000, confidence = 0.29. reach_left was rejected: 5-HT risk-aversion (5HT=0.68) penalises high-variance alternatives; Taking reach_left would increase uncertainty by ~0.562.\n  If reach_right were chosen: reward gap = +0.000, confidence = 1.00. reach_right was rejected: Bayesian belief lower for reach_right: Va=-21.594 vs Va=-8.472; 5-HT risk-aversion (5HT=0.68) penalises high-variance alternatives; Taking reach_right would increase uncertainty by ~0.848.",
+      "neuromodulatory_summary": "Neuromodulator state: DA=0.299, 5HT=0.679, NE=0.782. Mt=0.639. Dominant=NE (exploration mode). alpha_t=0.21787, rho=1.262.",
+      "attention_summary": "Decision primarily driven by: belief_Va (1.00), neuromodulators (0.00), pathway_NoGo (0.00).",
+      "dominant_nm": "NE",
+      "alpha_t": 0.21787302651247423,
+      "Mt": 0.6391560631267935,
+      "rho": 1.2618934490685216,
+      "conflict_score": 8.117658499594654,
+      "n_rules_fired": 4,
+      "attention_weights": [
+        0.9988268717293343,
+        0.00015626162344558844,
+        0.0001710454123637007,
+        0.00017108375663961052,
+        0.00016048614631290214,
+        0.00017108375663961052,
+        0.00017089475591764577,
+        0.0001722728183477316
+      ],
+      "counterfactuals": [
+        {
+          "rejected": 0,
+          "delta_Q": 0.0,
+          "conf": 0.29207003091032474,
+          "text": "reach_left was rejected: 5-HT risk-aversion (5HT=0.68) penalises high-variance alternatives; Taking reach_left would increase uncertainty by ~0.562."
+        },
+        {
+          "rejected": 1,
+          "delta_Q": 0.0,
+          "conf": 1.0,
+          "text": "reach_right was rejected: Bayesian belief lower for reach_right: Va=-21.594 vs Va=-8.472; 5-HT risk-aversion (5HT=0.68) penalises high-variance alternatives; Taking reach_right would increase uncertainty by ~0.848."
+        },
+        {
+          "rejected": 2,
+          "delta_Q": -1.1,
+          "conf": 1.0,
+          "text": "press_button was rejected: press_button had higher Q_risk=1.000 but was blocked by other constraints; Bayesian belief lower for press_button: Va=-14.893 vs Va=-8.472; 5-HT risk-aversion (5HT=0.68) penalises high-variance alternatives; Taking press_button would increase uncertainty by ~0.178."
+        }
+      ]
+    },
+    {
+      "t_ms": 300.0,
+      "step": 4,
+      "chosen_action": 0,
+      "action_name": "reach_left",
+      "confidence": 0.3426000703230177,
+      "uncertainty": 0.9391427566814032,
+      "gate_margin": 0.0,
+      "rationale": "Uncertainty Ut=0.939 exceeds threshold 0.6. System in exploratory mode \u2014 confidence gate raised to require stronger evidence. | Norepinephrine dominant \u2014 arousal/exploration mode. System is sensitive to novel or surprising options.",
+      "pathway_rationale": "No dominant pathway rule. Gate margin = 0.0000. Confidence = 0.061.",
+      "rejected_alternatives": [
+        "press_button [SUBOPTIMAL] (score=1.000)",
+        "reach_right [SUBOPTIMAL] (score=0.021)",
+        "wait [SUBOPTIMAL] (score=0.000)"
+      ],
+      "counterfactual_comparison": "  If press_button were chosen: reward gap = -1.100, confidence = 1.00. press_button was rejected: press_button had higher Q_risk=1.000 but was blocked by other constraints; 5-HT risk-aversion (5HT=0.73) penalises high-variance alternatives; Taking press_button would increase uncertainty by ~1.059.\n  If reach_right were chosen: reward gap = +0.000, confidence = 1.00. reach_right was rejected: Bayesian belief lower for reach_right: Va=-20.557 vs Va=-6.210; 5-HT risk-aversion (5HT=0.73) penalises high-variance alternatives; Taking reach_right would increase uncertainty by ~0.809.\n  If wait were chosen: reward gap = +0.000, confidence = 1.00. wait was rejected: Bayesian belief lower for wait: Va=-21.240 vs Va=-6.210; 5-HT risk-aversion (5HT=0.73) penalises high-variance alternatives; Taking wait would increase uncertainty by ~0.877.",
+      "neuromodulatory_summary": "Neuromodulator state: DA=0.244, 5HT=0.734, NE=0.834. Mt=0.736. Dominant=NE (exploration mode). alpha_t=0.19764, rho=1.146.",
+      "attention_summary": "Decision primarily driven by: belief_Va (0.32), pathway_NoGo (0.10), pathway_Go (0.10).",
+      "dominant_nm": "NE",
+      "alpha_t": 0.1976446999257227,
+      "Mt": 0.7358689741675348,
+      "rho": 1.1457260833607121,
+      "conflict_score": 12.071264980064944,
+      "n_rules_fired": 4,
+      "attention_weights": [
+        0.32132942908154516,
+        0.08789266417430489,
+        0.10032839933148038,
+        0.10032839933148038,
+        0.09382405191166072,
+        0.09769213864040958,
+        0.10009908430412273,
+        0.09850583322467484
+      ],
+      "counterfactuals": [
+        {
+          "rejected": 1,
+          "delta_Q": 0.0,
+          "conf": 1.0,
+          "text": "reach_right was rejected: Bayesian belief lower for reach_right: Va=-20.557 vs Va=-6.210; 5-HT risk-aversion (5HT=0.73) penalises high-variance alternatives; Taking reach_right would increase uncertainty by ~0.809."
+        },
+        {
+          "rejected": 2,
+          "delta_Q": -1.1,
+          "conf": 1.0,
+          "text": "press_button was rejected: press_button had higher Q_risk=1.000 but was blocked by other constraints; 5-HT risk-aversion (5HT=0.73) penalises high-variance alternatives; Taking press_button would increase uncertainty by ~1.059."
+        },
+        {
+          "rejected": 3,
+          "delta_Q": 0.0,
+          "conf": 1.0,
+          "text": "wait was rejected: Bayesian belief lower for wait: Va=-21.240 vs Va=-6.210; 5-HT risk-aversion (5HT=0.73) penalises high-variance alternatives; Taking wait would increase uncertainty by ~0.877."
+        }
+      ]
+    },
+    {
+      "t_ms": 400.0,
+      "step": 5,
+      "chosen_action": 1,
+      "action_name": "reach_right",
+      "confidence": 0.3000270774429766,
+      "uncertainty": 0.9999613179386049,
+      "gate_margin": 0.0,
+      "rationale": "Uncertainty Ut=1.000 exceeds threshold 0.6. System in exploratory mode \u2014 confidence gate raised to require stronger evidence. | Norepinephrine dominant \u2014 arousal/exploration mode. System is sensitive to novel or surprising options.",
+      "pathway_rationale": "Direct pathway Go signal for action 3 dominates indirect No-Go (ratio=27.09). Thalamic disinhibition pathway is active.",
+      "rejected_alternatives": [
+        "wait [SUBOPTIMAL] (score=1.000)",
+        "press_button [SUBOPTIMAL] (score=0.248)",
+        "reach_left [SUBOPTIMAL] (score=0.000)"
+      ],
+      "counterfactual_comparison": "  If press_button were chosen: reward gap = -1.100, confidence = 1.00. press_button was rejected: press_button had higher Q_risk=1.000 but was blocked by other constraints; Bayesian belief lower for press_button: Va=-15.237 vs Va=-7.419; 5-HT risk-aversion (5HT=0.76) penalises high-variance alternatives; Taking press_button would increase uncertainty by ~0.253.\n  If reach_left were chosen: reward gap = +0.000, confidence = 1.00. reach_left was rejected: Bayesian belief lower for reach_left: Va=-20.777 vs Va=-7.419; 5-HT risk-aversion (5HT=0.76) penalises high-variance alternatives; Taking reach_left would increase uncertainty by ~0.807.\n  If wait were chosen: reward gap = +0.000, confidence = 0.01. wait was rejected: 5-HT risk-aversion (5HT=0.76) penalises high-variance alternatives; Taking wait would increase uncertainty by ~0.532.",
+      "neuromodulatory_summary": "Neuromodulator state: DA=0.240, 5HT=0.761, NE=0.844. Mt=0.694. Dominant=NE (exploration mode). alpha_t=0.19890, rho=1.264.",
+      "attention_summary": "Decision primarily driven by: belief_Va (0.19), reward_history (0.12), pathway_NoGo (0.12).",
+      "dominant_nm": "NE",
+      "alpha_t": 0.19890263576083284,
+      "Mt": 0.6937174871210787,
+      "rho": 1.2640352154310248,
+      "conflict_score": 8.001310017281593,
+      "n_rules_fired": 4,
+      "attention_weights": [
+        0.18766292903842435,
+        0.10270914962411909,
+        0.1207338254823677,
+        0.12073382961958999,
+        0.11053012416012206,
+        0.12073382961958999,
+        0.12056891706082933,
+        0.11632739539476984
+      ],
+      "counterfactuals": [
+        {
+          "rejected": 0,
+          "delta_Q": 0.0,
+          "conf": 1.0,
+          "text": "reach_left was rejected: Bayesian belief lower for reach_left: Va=-20.777 vs Va=-7.419; 5-HT risk-aversion (5HT=0.76) penalises high-variance alternatives; Taking reach_left would increase uncertainty by ~0.807."
+        },
+        {
+          "rejected": 2,
+          "delta_Q": -1.1,
+          "conf": 1.0,
+          "text": "press_button was rejected: press_button had higher Q_risk=1.000 but was blocked by other constraints; Bayesian belief lower for press_button: Va=-15.237 vs Va=-7.419; 5-HT risk-aversion (5HT=0.76) penalises high-variance alternatives; Taking press_button would increase uncertainty by ~0.253."
+        },
+        {
+          "rejected": 3,
+          "delta_Q": 0.0,
+          "conf": 0.011545326019701907,
+          "text": "wait was rejected: 5-HT risk-aversion (5HT=0.76) penalises high-variance alternatives; Taking wait would increase uncertainty by ~0.532."
+        }
+      ]
+    }
+  ],
+  "n_total": 5
+}

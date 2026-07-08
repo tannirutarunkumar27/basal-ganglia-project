@@ -1,0 +1,50 @@
+{
+  "behavioral": {
+    "accuracy": 0.257,
+    "reward_rate": -0.08470000000000001,
+    "convergence_speed": -1,
+    "regret": 2196.3999999999996,
+    "error_recovery": 4.982456140350878
+  },
+  "learning": {
+    "reward_convergence": 1.0,
+    "learning_speed": 0.0,
+    "sample_efficiency": 0.44754303988094424,
+    "success_rate": 0.0
+  },
+  "reasoning": {
+    "posterior_calibration": 0.66,
+    "uncertainty_alignment": -0.03384000587694607,
+    "explanation_quality": 0.6349874484766236,
+    "counterfactual_consistency": 1.0
+  },
+  "neural": {
+    "spike_sparsity": 0.9978875,
+    "adaptation_dynamics": 0.6004928036189703,
+    "dopamine_burst_timing": 0.20815810698567136,
+    "pathway_balance": 1.066012122550418e-15,
+    "eligibility_trace_evol": 0.3195756880475428
+  },
+  "meta_learning": {
+    "U_alpha_correlation": 0.8237110354277588,
+    "volatility_adaptability": 0.549,
+    "reversal_robustness": 0.257
+  },
+  "neuromodulation": {
+    "DA_5HT_NE_interaction": 0.7610292837573209,
+    "risk_sensitivity": 0.09819095421486108,
+    "arousal_control": 0.7055675903918976,
+    "confidence_modulation": 0.5526724141681035
+  },
+  "energy": {
+    "total_spikes": 2535,
+    "mean_spikes_per_step": 1.2675,
+    "latency_ms": 0.0,
+    "synaptic_update_pJ": 200000.0,
+    "memory_sparsity": 0.015781249999999997,
+    "active_params": 22046,
+    "total_energy_nJ": 838.555,
+    "neuromorphic_efficiency": 0.5139999897200002
+  },
+  "step_count": 2000
+}
